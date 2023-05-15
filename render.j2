@@ -3,6 +3,29 @@ This is my first line
 favorite color: {{ color }}
 car: {{ car }}
 {# This is a comment line #}
-  {% for switch in switches %}
+{% for switch in switches %}
 {{ switch }}
-  {% endfor %}
+{% endfor %}
+
+I like a {{ color }} {{ car }}
+
+ip name servers {{ name_servers }}
+{# with join filter #}
+ip name servers {{ name_servers | join (" ") }}
+
+
+Ports Descriptions:
+{% for port in network_ports %}
+{%   for key, value in port.items() %}
+{{ key }}: {{ value }}
+{%   endfor %}
+{% endfor %}
+
+Odd/Even Ports:
+{% for port in network_ports %}
+{%   for key, value in port.items() %}
+{%     if 'Ethernet' in key and (key[-1] | int) % 2 != 0 %}
+{{ key }}
+{%     endif %}
+{%   endfor %}
+{% endfor %}

@@ -1,6 +1,26 @@
 This is my first line
-favorite color: blue
+favorite color: red
 car: mustang
-(1)sw1
+sw1
 sw2
 sw3
+
+I like a red mustang
+
+ip name servers ['1.1.1.1', '2.2.2.2', '3.3.3.3', '4.4.4.4']
+ip name servers 1.1.1.1 2.2.2.2 3.3.3.3 4.4.4.4
+
+
+Ports Descriptions:
+Ethernet1: 
+desc: Generic Port 1
+Ethernet2: 
+desc: Generic Port 2
+Ethernet3: 
+desc: Generic Port 3
+Ethernet4: 
+desc: Generic Port 4
+
+Odd/Even Ports:
+Ethernet1
+Ethernet3

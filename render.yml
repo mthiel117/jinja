@@ -5,6 +5,8 @@
     color: blue
     car: mustang
     switches: [sw1,sw2,sw3]
+  vars_files:
+    - variables.yml
 
   tasks:
 
@@ -12,5 +14,3 @@
     ansible.builtin.template:
       src: render.j2
       dest: outputfile.txt
-
-#jinja2: lstrip_blocks: False, trim_blocks: False
