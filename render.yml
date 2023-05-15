@@ -1,0 +1,16 @@
+---
+- name: Render Jinja Template
+  hosts: localhost
+  vars:
+    color: blue
+    car: mustang
+    switches: [sw1,sw2,sw3]
+
+  tasks:
+
+  - name: Template a file
+    ansible.builtin.template:
+      src: render.j2
+      dest: outputfile.txt
+
+#jinja2: lstrip_blocks: False, trim_blocks: False

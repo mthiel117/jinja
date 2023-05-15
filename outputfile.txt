@@ -1,0 +1,6 @@
+This is my first line
+favorite color: blue
+car: mustang
+sw1
+sw2
+sw3

@@ -1,0 +1,8 @@
+#jinja2: lstrip_blocks: True, trim_blocks: True
+This is my first line
+favorite color: {{ color }}
+car: {{ car }}
+{# This is a comment line #}
+  {% for switch in switches %}
+{{ switch }}
+  {% endfor %}
