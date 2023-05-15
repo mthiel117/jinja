@@ -1,0 +1,21 @@
+# simple key-value pairs
+color: red
+car: mustang
+
+# list
+name_servers:
+  - 1.1.1.1
+  - 2.2.2.2
+  - 3.3.3.3
+  - 4.4.4.4
+
+# List of dictionaries
+network_ports:
+  - Ethernet1:
+    desc: "Generic Port 1"
+  - Ethernet2:
+    desc: "Generic Port 2"
+  - Ethernet3:
+    desc: "Generic Port 3"
+  - Ethernet4:
+    desc: "Generic Port 4"
