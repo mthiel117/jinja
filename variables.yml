@@ -2,7 +2,8 @@
 color: red
 car: mustang
 
-# list
+# lists
+switches: [sw1,sw2,sw3]
 name_servers:
   - 1.1.1.1
   - 2.2.2.2
